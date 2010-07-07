@@ -1,12 +1,11 @@
-<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "jwysiwyg/jquery/jquery-1.3.2.js", "jwysiwyg/jwysiwyg/jquery.wysiwyg.js" %>
-<%= stylesheet_link_tag 'jquery.wysiwyg', 'examples'%>
+<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "scripts/wysiwyg.js", "scripts/wysiwyg-settings.js" %>
+<%= stylesheet_link_tag 'styles/wysiwyg'%>
 
-<script type="text/javascript">
-$(function()
-{
-    $('#post_body').wysiwyg();
-});
 </script>
+ <script language="javascript1.2">
+  WYSIWYG.attach('post_body');
+</script>
+
 
 <h1>Editing post</h1>
 
