@@ -4,23 +4,11 @@
 <script type="text/javascript">
 $(function()
 {
-    $('#wywy').wysiwyg();
-});
-</script>
-
-<script type="text/javascript">
-$(function()
-{
     $('#post_body').wysiwyg();
 });
 </script>
 
 <h1>Editing post</h1>
-
-
-<div>
-  <textarea name="wysiwyg" id="wywy" rows="5" cols="47"></textarea>
-</div>
 
 <% form_for(@post) do |f| %>
   <%= f.error_messages %>
